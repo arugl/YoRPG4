@@ -14,7 +14,16 @@ return name;
 }
 
 public static String about(){
-return "Heros are heroic.";
+return "Heroes dedicate their lives to fight evil. If you are a morally driven person, you will want to be a hero. :)";
+}
+
+//METHODS
+//specialize: gives our hero a titanium weapon permanently 
+public void specialize(){
+strength = 200;
+}
+
+public void normalize(){
 }
 
 public void regenerate() {
@@ -25,5 +34,3 @@ strength = 100;
 }
 
 }
-//BY MIKA SARKIN JAIN
-//BY MIKA SARKIN JAIN
