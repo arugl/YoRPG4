@@ -67,13 +67,46 @@ public class YoRPG {
 
 	String s;
 	String name = "";
-	s = "Welcome to Ye Olde RPG!\n";
-	//BY MIKA SARKIN JAIN
-    //BY MIKA SARKIN JAIN
-	s += "\nYOU: " + goodType;
-    s += "\nYOUR OPPONENT: " + evilType + "\n";
-    //BY MIKA SARKIN JAIN
-    //BY MIKA SARKIN JAIN
+	s = "Welcome to Ye Olde RPG!\n ";
+	
+	// create goodTypes
+	Warrior w = new Warrior("X");
+	Mage mage = new Mage("X");
+	Hero hero = new Hero("X");
+	Archer archer = new Archer("X");
+	Ninja ninja = new Ninja("X");
+	
+	//create evilTypes
+	Monster mon = new Monster();
+	Rogue rogue = new Rogue();
+	
+	System.out.println(s + "\n" + "Player options : ");
+	System.out.println(" 1 : " + w.about()); // prints warrior info
+	System.out.println(" 2 : " + mage.about()); // prints mage info
+       	System.out.println(" 3 : " + hero.about()); // prints hero info
+      	System.out.println(" 4 : " + archer.about()); //prints archer info
+	System.out.println(" 5 : " + ninja.about() + "\n  Let's begin your journey brave adventurer! \n"); //prints ninja info
+
+       	s = "";
+	s+= "\n Who will you be? \n";
+	s+= "\t1: Warrior\n";
+	s+= "\t2: Mage\n";
+	s+= "\t3: Hero\n";
+	s+= "\t4: Archer\n";
+	s+= "\t5: Ninja\n";
+	System.out.print (s);
+	try {
+	    type = Integer.parseInt( in.readLine() );
+	}
+	catch ( IOException e ) { }
+
+	if (type == 1) goodType = "warrior";
+	else if (type == 2) goodType = "mage";
+	else if (type == 3) goodType = "hero";
+	else if (type == 4) goodType = "archer";
+	else goodType = "ninja";
+
+	s = "";
 	s += "\nChoose your difficulty: \n";
 	s += "\t1: Easy\n";
 	s += "\t2: Not so easy\n";
@@ -96,15 +129,21 @@ public class YoRPG {
 
 
 	//instantiate the player's character
-	//BY MIKA SARKIN JAIN
-    //BY MIKA SARKIN JAIN
 	if (goodType.equals("warrior")){pat = new Warrior(name);}
-    else if (goodType.equals("hero")){pat = new Hero(name);}
-    else if (goodType.equals("ninja")){pat = new Ninja(name);}
-    else if (goodType.equals("archer")){pat = new Archer(name);}
-    else if (goodType.equals("mage")){pat = new Mage(name);}
-    //BY MIKA SARKIN JAIN
-    //BY MIKA SARKIN JAIN
+	else if (goodType.equals("mage")){pat = new Mage(name);}
+	else if (goodType.equals("hero")){pat = new Hero(name);}
+	else if (goodType.equals("archer")){pat = new Archer(name);}
+	else if (goodType.equals("ninja")){pat = new Ninja(name);}
+
+	
+	s = "";
+	s += "\nYOU: " + goodType;
+	System.out.println("\n" + "Opponents you may encounter : ");
+	System.out.println("1 : " + mon.about()); // prints monster info
+	System.out.println("2 : "  + rogue.about()); // prints rogue info
+	
+	s += "\nYOUR NEXT WILL BE OPPONENT...   " + evilType + "\n";
+	System.out.println (s);
     }//end newGame()
 
 
