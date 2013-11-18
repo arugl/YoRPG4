@@ -3,10 +3,10 @@
 public class Rogue extends Character{
 public Rogue(){
 name = "Rogue";
-life = 150;
+life = 1300;
 defense = 20;
-attack = 1;
-strength = (int)(Math.random()*45 + 20);
+attack = 5;
+strength = (int)(Math.random()*45 + 50);
 }
 
 public String getName(){
@@ -18,14 +18,14 @@ public void specialize(){}
 public void normalize(){}
 
 public static String about(){
-return "The rogue fights with daggers. The rogue is nimble and fast. Do not mess with them.";
+return "Rogues fight with daggers. They are nimble and fast. More challenging than the average Monster.";
 }
 
 public void regenerate() {
-life = 150;
+life = 1300;
 defense = 20;
-attack = 1;
-strength = (int)(Math.random()*45 + 20);
+attack = 5;
+strength = (int)(Math.random()*45 + 50);
 }
 
 }
