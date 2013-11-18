@@ -1,5 +1,3 @@
-//BY MIKA SARKIN JAIN
-//BY MIKA SARKIN JAIN
 public class Monster extends Character{
 public Monster(){
 name = "Monster";
@@ -18,7 +16,7 @@ public void specialize(){}
 public void normalize(){}
 
 public static String about(){
-return "Monsters are mean.";
+return "Monsters are mean. The monster mainly lives in the depths of the forest, but can also be living in caves, underground, etc..basically everywhere.. Be ruthless and have no mercy when facing these evil creatures.";
 }
 
 public void regenerate() {
@@ -28,5 +26,3 @@ attack = 2;
 strength = (int)(Math.random()*90 + 40);
 }
 }
-//BY MIKA SARKIN JAIN
-//BY MIKA SARKIN JAIN
