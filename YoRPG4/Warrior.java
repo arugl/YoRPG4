@@ -14,7 +14,7 @@ return name;
 }
 
 public static String about(){
-return "Warriors battle.";
+return "A warrior is a wandering adventurer who battles with monsters. Don't die.";
 }
 
 //                METHODS
