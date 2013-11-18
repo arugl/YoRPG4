@@ -4,7 +4,7 @@ public class Ninja extends Character{
 public Ninja(String s){
 name = s;
 life = 2000;
-defense = 10;
+defense = 100;
 attack = 10;
 strength = 100;
 }
@@ -17,9 +17,13 @@ public static String about(){
 return "Ninjas are quick and deadly.";
 }
 
+public void specialize(){
+}
+public void normalize(){
+}
 public void regenerate() {
 life = 2000;
-defense = 10;
+defense = 100;
 attack = 10;
 strength = 100;
 }
