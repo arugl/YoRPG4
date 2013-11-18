@@ -18,7 +18,7 @@ public void specialize(){}
 public void normalize(){}
 
 public static String about(){
-return "Rogues steal things.";
+return "The rogue fights with daggers. The rogue is nimble and fast. Do not mess with them.";
 }
 
 public void regenerate() {
@@ -29,5 +29,3 @@ strength = (int)(Math.random()*45 + 20);
 }
 
 }
-//BY MIKA SARKIN JAIN
-//BY MIKA SARKIN JAIN
