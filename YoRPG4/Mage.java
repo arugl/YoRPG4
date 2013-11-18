@@ -14,7 +14,7 @@ return name;
 }
 
 public static String about(){
-return "The mage uses magic unlike the other characters who physically attack others. Their special power is to regain hp during battle.";
+return "Mages use magic unlike the other characters who physically attack others. Their special power is to regain hp during battle.";
 }
 
 //METHODS
