@@ -14,7 +14,16 @@ return name;
 }
 
 public static String about(){
-return "Mages use magic.";
+return "The mage uses magic unlike the other characters who physically attack others. Their special power is to regain hp during battle.";
+}
+
+//METHODS
+//prepares Mage for special power during the round, to regain some hp if hp is low
+public void specialize(){
+	life = life + 300;
+}
+
+public void normalize(){
 }
 
 public void regenerate() {
@@ -25,5 +34,3 @@ strength = 100;
 }
 
 }
-//BY MIKA SARKIN JAIN
-//BY MIKA SARKIN JAIN
